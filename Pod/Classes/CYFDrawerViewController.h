@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-@class CYFDrawerViewController;
+#import "CYFShadowView.h"
+
 typedef NS_ENUM(NSUInteger, CYFDrawerViewStatus) {
     CYFDrawerViewStatusClosed,
     CYFDrawerViewStatusOpen,
@@ -15,18 +16,13 @@ typedef NS_ENUM(NSUInteger, CYFDrawerViewStatus) {
     CYFDrawerViewStatusClosing
 };
 
-@protocol CYFDrawerViewControllerDelegate <NSObject>
-
-
-@end
-
 @interface CYFDrawerViewController : UIViewController
 
-@property (nonatomic, weak) id<CYFDrawerViewControllerDelegate> delegate;
 @property (nonatomic, strong) UIViewController *mainViewController;
 @property (nonatomic, strong) UIViewController *sideViewController;
 @property (nonatomic) CGFloat openRevealDistance;
 @property (nonatomic, readonly) CYFDrawerViewStatus status;
+@property (nonatomic, strong, readonly) CYFShadowView *shadowView;
 @property (nonatomic, strong, readonly) UIScreenEdgePanGestureRecognizer *screenEdgeGesture;
 @property (nonatomic, strong, readonly) UISwipeGestureRecognizer *swipeGesture;
 

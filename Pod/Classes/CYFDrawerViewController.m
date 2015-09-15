@@ -7,11 +7,16 @@
 //
 
 #import "CYFDrawerViewController.h"
+#import "CYFShadowView.h"
 
-@interface CYFDrawerViewController ()
+@interface CYFDrawerViewController () {
+    CGFloat _openRevealDistance;
+}
+
 @property (nonatomic, strong) NSLayoutConstraint *sideViewWidthConstraint;
 @property (nonatomic, strong) NSLayoutConstraint *mainViewLeftConstraint;
 @property (nonatomic) CYFDrawerViewStatus status;
+
 @end
 
 @implementation CYFDrawerViewController
@@ -24,19 +29,33 @@
     [self addChildViewController:self.sideViewController];
     [self.sideViewController didMoveToParentViewController:self];
     
-    // setup sideView constraints
     UIView *sideView = self.sideViewController.view;
     sideView.translatesAutoresizingMaskIntoConstraints = false;
     [self.view addSubview:sideView];
+    
+    CYFShadowView *shadowView = [[CYFShadowView alloc] init];
+    shadowView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:shadowView];
+    
+    UIView *mainView = self.mainViewController.view;
+    [self.view addSubview:mainView];
+    mainView.translatesAutoresizingMaskIntoConstraints = false;
+    
+    // setup sideView constraints
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[sideView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(sideView)]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|[sideView]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(sideView)]];
     self.sideViewWidthConstraint = [NSLayoutConstraint constraintWithItem:sideView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:self.openRevealDistance];
     [sideView addConstraint:self.sideViewWidthConstraint];
     
+    // setup shadowView constraints
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[shadowView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(shadowView)]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[shadowView(10)][mainView]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(shadowView, mainView)]];
+    _shadowView = shadowView;
+    self.shadowView.shadowColor = [UIColor blackColor];
+    self.shadowView.shadowRadius = 10.0;
+    self.shadowView.shadowOpacity = 1.0;
+    
     // setup mainView constraints
-    UIView *mainView = self.mainViewController.view;
-    [self.view addSubview:mainView];
-    mainView.translatesAutoresizingMaskIntoConstraints = false;
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[mainView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(mainView)]];
     self.mainViewLeftConstraint = [NSLayoutConstraint constraintWithItem:mainView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0];
     [self.view addConstraint:self.mainViewLeftConstraint];
@@ -50,6 +69,7 @@
     self.swipeGesture.direction = UISwipeGestureRecognizerDirectionLeft;
     [self.view addGestureRecognizer:self.swipeGesture];
     self.swipeGesture.enabled = NO;
+
 }
 
 - (instancetype)init
@@ -80,6 +100,7 @@
     }
     
     self.status = CYFDrawerViewStatusOpening;
+    self.mainViewController.view.userInteractionEnabled = NO;
     [self setNeedsStatusBarAppearanceUpdate];
     self.screenEdgeGesture.enabled = NO;
     self.mainViewLeftConstraint.constant = self.openRevealDistance;
@@ -109,6 +130,7 @@
             completionBlock();
         }
         self.screenEdgeGesture.enabled = YES;
+        self.mainViewController.view.userInteractionEnabled = YES;
         [self setNeedsStatusBarAppearanceUpdate];
     }];
     
@@ -134,6 +156,17 @@
         return self.mainViewController;
     }
     return self.sideViewController;
+}
+
+- (CGFloat)openRevealDistance {
+    return _openRevealDistance;
+}
+
+- (void)setOpenRevealDistance:(CGFloat)openRevealDistance {
+    _openRevealDistance = openRevealDistance;
+    if (self.sideViewWidthConstraint) {
+        self.sideViewWidthConstraint.constant = openRevealDistance;
+    }
 }
 
 @end
