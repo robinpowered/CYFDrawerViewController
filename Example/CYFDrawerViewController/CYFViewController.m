@@ -7,6 +7,9 @@
 //
 
 #import "CYFViewController.h"
+#import "CYFMainViewController.h"
+#import "CYFSideViewController.h"
+#import "CYFDrawerViewController.h"
 
 @interface CYFViewController ()
 
@@ -17,13 +20,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    CYFMainViewController *main = [CYFMainViewController new];
+    CYFSideViewController *side = [CYFSideViewController new];
+    
+    CYFDrawerViewController *drawer = [[CYFDrawerViewController alloc] initWithMainViewController:main sideViewController:side];
+    
+    
+    [self addChildViewController:drawer];
+    [drawer didMoveToParentViewController:self];
+    
+    UIView *drawerView = drawer.view;
+    drawerView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:drawerView];
+    
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[drawerView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(drawerView)]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[drawerView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(drawerView)]];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end

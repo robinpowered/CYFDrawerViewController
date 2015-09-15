@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		45FD74B22AC2AE1DFA0FFA56 /* Pods_CYFDrawerViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5ECF4AA3D806FC701CE69D4 /* Pods_CYFDrawerViewController_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		4FE9E6330F195245886D412F /* Pods_CYFDrawerViewController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCAD53BFD0A310BAA187973 /* Pods_CYFDrawerViewController_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		57B12EE31BA8B80A007D8469 /* CYFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B12EE21BA8B80A007D8469 /* CYFMainViewController.m */; };
+		57B12EE61BA8B814007D8469 /* CYFSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B12EE51BA8B814007D8469 /* CYFSideViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -39,7 +41,11 @@
 		2F6CCE7B9F6EB67793B50212 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		486CEC5A0DD129B2AC1B1E34 /* CYFDrawerViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CYFDrawerViewController.podspec; path = ../CYFDrawerViewController.podspec; sourceTree = "<group>"; };
 		4EA5164A4E183E70844059AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* CYFDrawerViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = CYFDrawerViewController.app; path = CYFDrawerViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57B12EE11BA8B80A007D8469 /* CYFMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYFMainViewController.h; sourceTree = "<group>"; };
+		57B12EE21BA8B80A007D8469 /* CYFMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYFMainViewController.m; sourceTree = "<group>"; };
+		57B12EE41BA8B814007D8469 /* CYFSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYFSideViewController.h; sourceTree = "<group>"; };
+		57B12EE51BA8B814007D8469 /* CYFSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYFSideViewController.m; sourceTree = "<group>"; };
+		6003F58A195388D20070C39A /* CYFDrawerViewController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYFDrawerViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -52,7 +58,7 @@
 		6003F5A5195388D20070C39A /* CYFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYFViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* CYFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYFViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = CYFDrawerViewController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* CYFDrawerViewController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYFDrawerViewController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -108,8 +114,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* CYFDrawerViewController.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* CYFDrawerViewController_Example.app */,
+				6003F5AE195388D20070C39A /* CYFDrawerViewController_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +141,10 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* CYFViewController.h */,
 				6003F5A6195388D20070C39A /* CYFViewController.m */,
+				57B12EE11BA8B80A007D8469 /* CYFMainViewController.h */,
+				57B12EE21BA8B80A007D8469 /* CYFMainViewController.m */,
+				57B12EE41BA8B814007D8469 /* CYFSideViewController.h */,
+				57B12EE51BA8B814007D8469 /* CYFSideViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -213,7 +223,7 @@
 			);
 			name = CYFDrawerViewController_Example;
 			productName = CYFDrawerViewController;
-			productReference = 6003F58A195388D20070C39A /* CYFDrawerViewController.app */;
+			productReference = 6003F58A195388D20070C39A /* CYFDrawerViewController_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* CYFDrawerViewController_Tests */ = {
@@ -234,7 +244,7 @@
 			);
 			name = CYFDrawerViewController_Tests;
 			productName = CYFDrawerViewControllerTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* CYFDrawerViewController_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -390,7 +400,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B12EE31BA8B80A007D8469 /* CYFMainViewController.m in Sources */,
 				6003F59E195388D20070C39A /* CYFAppDelegate.m in Sources */,
+				57B12EE61BA8B814007D8469 /* CYFSideViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* CYFViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
