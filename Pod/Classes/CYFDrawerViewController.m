@@ -11,6 +11,7 @@
 @interface CYFDrawerViewController ()
 @property (nonatomic, strong) NSLayoutConstraint *sideViewWidthConstraint;
 @property (nonatomic, strong) NSLayoutConstraint *mainViewLeftConstraint;
+@property (nonatomic) CYFDrawerViewStatus status;
 @end
 
 @implementation CYFDrawerViewController
@@ -78,14 +79,14 @@
         return;
     }
     
-    _status = CYFDrawerViewStatusOpening;
+    self.status = CYFDrawerViewStatusOpening;
     [self setNeedsStatusBarAppearanceUpdate];
     self.screenEdgeGesture.enabled = NO;
     self.mainViewLeftConstraint.constant = self.openRevealDistance;
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
-        _status = CYFDrawerViewStatusOpen;
+        self.status = CYFDrawerViewStatusOpen;
         if (completionBlock) {
             completionBlock();
         }
@@ -98,12 +99,12 @@
         return;
     }
     self.swipeGesture.enabled = NO;
-    _status = CYFDrawerViewStatusClosing;
+    self.status = CYFDrawerViewStatusClosing;
     self.mainViewLeftConstraint.constant = 0;
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
-        _status = CYFDrawerViewStatusClosed;
+        self.status = CYFDrawerViewStatusClosed;
         if (completionBlock) {
             completionBlock();
         }
