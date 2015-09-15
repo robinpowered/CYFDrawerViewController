@@ -23,8 +23,8 @@ typedef NS_ENUM(NSUInteger, CYFDrawerViewStatus) {
 @interface CYFDrawerViewController : UIViewController
 
 @property (nonatomic, weak) id<CYFDrawerViewControllerDelegate> delegate;
-@property (nonatomic, strong, readonly) UIViewController *mainViewController;
-@property (nonatomic, strong, readonly) UIViewController *sideViewController;
+@property (nonatomic, strong) UIViewController *mainViewController;
+@property (nonatomic, strong) UIViewController *sideViewController;
 @property (nonatomic) CGFloat openRevealDistance;
 @property (nonatomic, readonly) CYFDrawerViewStatus status;
 @property (nonatomic, strong, readonly) UIScreenEdgePanGestureRecognizer *screenEdgeGesture;

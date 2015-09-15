@@ -51,6 +51,14 @@
     self.swipeGesture.enabled = NO;
 }
 
+- (instancetype)init
+{
+    self = [self initWithMainViewController:nil sideViewController:nil];
+    if (self) {
+        
+    }
+    return self;
+}
 
 - (instancetype)initWithMainViewController:(UIViewController *)mainViewController
                         sideViewController:(UIViewController *)sideViewController
