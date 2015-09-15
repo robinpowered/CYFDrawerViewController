@@ -1,0 +1,20 @@
+PODS:
+  - CYFDrawerViewController (0.1.0)
+  - Expecta (1.0.3)
+  - Specta (1.0.3)
+
+DEPENDENCIES:
+  - CYFDrawerViewController (from `../`)
+  - Expecta
+  - Specta
+
+EXTERNAL SOURCES:
+  CYFDrawerViewController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CYFDrawerViewController: 36f629e6b0bf1e746a19dc2f795a5349fe2d788a
+  Expecta: 9d1bff6c8b0eeee73a166a2ee898892478927a15
+  Specta: cf3e4188cf35375c3ee2cd03f8db8f1f4ef98234
+
+COCOAPODS: 0.37.2
