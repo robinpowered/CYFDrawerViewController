@@ -91,6 +91,7 @@
         _sideViewController = sideViewController;
         _openRevealDistance = 267;
         _status = CYFDrawerViewStatusClosed;
+        _openDuration = 0.25;
     }
     return self;
 }
@@ -105,7 +106,7 @@
     [self setNeedsStatusBarAppearanceUpdate];
     self.screenEdgeGesture.enabled = NO;
     self.mainViewLeftConstraint.constant = self.openRevealDistance;
-    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+    [UIView animateWithDuration:self.openDuration delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
         self.status = CYFDrawerViewStatusOpen;
@@ -123,7 +124,7 @@
     self.swipeGesture.enabled = NO;
     self.status = CYFDrawerViewStatusClosing;
     self.mainViewLeftConstraint.constant = 0;
-    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+    [UIView animateWithDuration:self.openDuration delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
         self.status = CYFDrawerViewStatusClosed;

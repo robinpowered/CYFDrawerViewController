@@ -21,6 +21,7 @@ typedef NS_ENUM(NSUInteger, CYFDrawerViewStatus) {
 @property (nonatomic, strong) UIViewController *mainViewController;
 @property (nonatomic, strong) UIViewController *sideViewController;
 @property (nonatomic) CGFloat openRevealDistance;
+@property (nonatomic) NSTimeInterval openDuration;
 @property (nonatomic, readonly) CYFDrawerViewStatus status;
 @property (nonatomic, strong, readonly) CYFShadowView *shadowView;
 @property (nonatomic, strong, readonly) UIScreenEdgePanGestureRecognizer *screenEdgeGesture;
