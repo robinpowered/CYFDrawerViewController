@@ -49,11 +49,12 @@
     
     // setup shadowView constraints
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[shadowView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(shadowView)]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[shadowView(10)][mainView]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(shadowView, mainView)]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:shadowView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:mainView attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0]];
+    [shadowView addConstraint:[NSLayoutConstraint constraintWithItem:shadowView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:80]];
     _shadowView = shadowView;
     self.shadowView.shadowColor = [UIColor blackColor];
     self.shadowView.shadowRadius = 10.0;
-    self.shadowView.shadowOpacity = 1.0;
+    self.shadowView.shadowOpacity = 0.6;
     
     // setup mainView constraints
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[mainView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(mainView)]];

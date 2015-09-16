@@ -23,9 +23,6 @@
 - (void)updateShadowPath
 {
     CGRect shadowPathRect = self.bounds;
-    CGFloat shadowRadius = self.shadowRadius;
-    shadowPathRect = CGRectInset(shadowPathRect, 0.0, -shadowRadius);
-
     self.shadowPath = [[UIBezierPath bezierPathWithRect:shadowPathRect] CGPath];
 }
 
