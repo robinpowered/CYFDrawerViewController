@@ -17,7 +17,7 @@ RBIDrawerViewController is available through [CocoaPods](http://cocoapods.org). 
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "RBIDrawerViewController"
+pod "RBIDrawerViewController", :git => "https://github.com/robinpowered/RBIDrawerViewController"
 ```
 
 ## Author

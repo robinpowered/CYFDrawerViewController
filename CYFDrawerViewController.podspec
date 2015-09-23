@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint CYFDrawerViewController.podspec' to ensure this is a
+# Be sure to run `pod lib lint RBIDrawerViewController.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "CYFDrawerViewController"
+  s.name             = "RBIDrawerViewController"
   s.version          = "0.1.0"
   s.summary          = "A minimalist drawer view controller"
 
@@ -20,11 +20,11 @@ Pod::Spec.new do |s|
                        A minimalist drawer view controller.
                        DESC
 
-  s.homepage         = "https://github.com/yifeic/CYFDrawerViewController"
+  s.homepage         = "https://github.com/robinpowered/RBIDrawerViewController"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "yifeic" => "yifei.chen@outlook.com" }
-  s.source           = { :git => "https://github.com/yifeic/CYFDrawerViewController.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/robinpowered/RBIDrawerViewController.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
