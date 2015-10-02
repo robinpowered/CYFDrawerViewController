@@ -19,4 +19,20 @@
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    NSLog(@"RBIMainViewController viewWillAppear");
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    NSLog(@"RBIMainViewController viewDidAppear");
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    NSLog(@"RBIMainViewController viewWillDisappear");
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    NSLog(@"RBIMainViewController viewDidDisappear");
+}
+
 @end

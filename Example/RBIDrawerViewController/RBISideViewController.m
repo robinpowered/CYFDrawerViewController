@@ -19,4 +19,20 @@
     self.view.backgroundColor = [UIColor grayColor];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    NSLog(@"RBISideViewController viewWillAppear");
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    NSLog(@"RBISideViewController viewDidAppear");
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    NSLog(@"RBISideViewController viewWillDisappear");
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    NSLog(@"RBISideViewController viewDidDisappear");
+}
+
 @end

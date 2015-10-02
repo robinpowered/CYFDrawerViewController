@@ -106,6 +106,7 @@
     [self setNeedsStatusBarAppearanceUpdate];
     self.screenEdgeGesture.enabled = NO;
     self.mainViewLeftConstraint.constant = self.openRevealDistance;
+    [self.sideViewController beginAppearanceTransition:YES animated:YES];
     [UIView animateWithDuration:self.openDuration delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
@@ -114,6 +115,7 @@
             completionBlock();
         }
         self.swipeGesture.enabled = YES;
+        [self.sideViewController endAppearanceTransition];
     }];
 }
 
@@ -124,6 +126,7 @@
     self.swipeGesture.enabled = NO;
     self.status = RBIDrawerViewStatusClosing;
     self.mainViewLeftConstraint.constant = 0;
+    [self.sideViewController beginAppearanceTransition:NO animated:YES];
     [UIView animateWithDuration:self.openDuration delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
@@ -133,6 +136,7 @@
         }
         self.screenEdgeGesture.enabled = YES;
         self.mainViewController.view.userInteractionEnabled = YES;
+        [self.sideViewController endAppearanceTransition];
         [self setNeedsStatusBarAppearanceUpdate];
     }];
     
@@ -171,26 +175,42 @@
     }
 }
 
-//#pragma mark - Lifecycle
-//
-//- (BOOL)shouldAutomaticallyForwardAppearanceMethods {
-//    return NO;
-//}
-//
-//- (void)viewWillAppear:(BOOL)animated {
-//    [self.mainViewController beginAppearanceTransition:YES animated:animated];
-//}
-//
-//- (void)viewDidAppear:(BOOL)animated {
-//    [self.mainViewController endAppearanceTransition];
-//}
-//
-//- (void)viewWillDisappear:(BOOL)animated {
-//    [self.mainViewController beginAppearanceTransition:NO animated:animated];
-//}
-//
-//- (void)viewDidDisappear:(BOOL)animated {
-//    [self.mainViewController endAppearanceTransition];
-//}
+#pragma mark - Lifecycle
+
+- (BOOL)shouldAutomaticallyForwardAppearanceMethods {
+    return NO;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self.mainViewController beginAppearanceTransition:YES animated:animated];
+    
+    if (self.status == RBIDrawerViewStatusOpen) {
+        [self.sideViewController beginAppearanceTransition:YES animated:animated];
+    }
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [self.mainViewController endAppearanceTransition];
+    
+    if (self.status == RBIDrawerViewStatusOpen) {
+        [self.sideViewController endAppearanceTransition];
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [self.mainViewController beginAppearanceTransition:NO animated:animated];
+    
+    if (self.status == RBIDrawerViewStatusOpen) {
+        [self.sideViewController beginAppearanceTransition:NO animated:animated];
+    }
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [self.mainViewController endAppearanceTransition];
+    
+    if (self.status == RBIDrawerViewStatusOpen) {
+        [self.sideViewController endAppearanceTransition];
+    }
+}
 
 @end

@@ -28,11 +28,11 @@
     
     
     [self addChildViewController:drawer];
+    [drawer didMoveToParentViewController:self];
+    
     UIView *drawerView = drawer.view;
     drawerView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:drawerView];
-    [drawer didMoveToParentViewController:self];
-    
     
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[drawerView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(drawerView)]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[drawerView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(drawerView)]];
