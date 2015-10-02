@@ -1,14 +1,14 @@
 //
-//  CYFShadowView.h
+//  RBIShadowView.h
 //  Pods
 //
-//  Created by Victor on 9/15/15.
+//  Created by Victor on 10/2/15.
 //
 //
 
 #import <UIKit/UIKit.h>
 
-@interface CYFShadowView : UIView
+@interface RBIShadowView : UIView
 
 @property (nonatomic) UIColor *shadowColor;
 @property (nonatomic) CGFloat shadowRadius;

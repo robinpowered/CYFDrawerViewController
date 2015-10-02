@@ -1,29 +1,29 @@
 //
-//  CYFDrawerViewController.h
+//  RBIDrawerViewController.h
 //  Pods
 //
-//  Created by Victor on 9/15/15.
+//  Created by Victor on 10/2/15.
 //
 //
 
 #import <UIKit/UIKit.h>
-#import "CYFShadowView.h"
+#import "RBIShadowView.h"
 
-typedef NS_ENUM(NSUInteger, CYFDrawerViewStatus) {
-    CYFDrawerViewStatusClosed,
-    CYFDrawerViewStatusOpen,
-    CYFDrawerViewStatusOpening,
-    CYFDrawerViewStatusClosing
+typedef NS_ENUM(NSUInteger, RBIDrawerViewStatus) {
+    RBIDrawerViewStatusClosed,
+    RBIDrawerViewStatusOpen,
+    RBIDrawerViewStatusOpening,
+    RBIDrawerViewStatusClosing
 };
 
-@interface CYFDrawerViewController : UIViewController
+@interface RBIDrawerViewController : UIViewController
 
 @property (nonatomic, strong) UIViewController *mainViewController;
 @property (nonatomic, strong) UIViewController *sideViewController;
 @property (nonatomic) CGFloat openRevealDistance;
 @property (nonatomic) NSTimeInterval openDuration;
-@property (nonatomic, readonly) CYFDrawerViewStatus status;
-@property (nonatomic, strong, readonly) CYFShadowView *shadowView;
+@property (nonatomic, readonly) RBIDrawerViewStatus status;
+@property (nonatomic, strong, readonly) RBIShadowView *shadowView;
 @property (nonatomic, strong, readonly) UIScreenEdgePanGestureRecognizer *screenEdgeGesture;
 @property (nonatomic, strong, readonly) UISwipeGestureRecognizer *swipeGesture;
 

@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-                       A minimalist drawer view controller.
+  A minimalist drawer view controller.
                        DESC
 
   s.homepage         = "https://github.com/robinpowered/RBIDrawerViewController"
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'CYFDrawerViewController' => ['Pod/Assets/*.png']
+    'RBIDrawerViewController' => ['Pod/Assets/*.png']
   }
 
   s.public_header_files = 'Pod/Classes/**/*.h'

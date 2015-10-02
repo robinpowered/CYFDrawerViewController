@@ -1,12 +1,12 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'CYFDrawerViewController_Example', :exclusive => true do
-  pod "CYFDrawerViewController", :path => "../"
+target 'RBIDrawerViewController_Example', :exclusive => true do
+  pod "RBIDrawerViewController", :path => "../"
 end
 
-target 'CYFDrawerViewController_Tests', :exclusive => true do
-  pod "CYFDrawerViewController", :path => "../"
+target 'RBIDrawerViewController_Tests', :exclusive => true do
+  pod "RBIDrawerViewController", :path => "../"
 
   pod 'Specta'
   pod 'Expecta'

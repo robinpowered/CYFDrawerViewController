@@ -1,20 +1,20 @@
 PODS:
-  - CYFDrawerViewController (0.1.0)
   - Expecta (1.0.3)
-  - Specta (1.0.3)
+  - RBIDrawerViewController (0.1.0)
+  - Specta (1.0.4)
 
 DEPENDENCIES:
-  - CYFDrawerViewController (from `../`)
   - Expecta
+  - RBIDrawerViewController (from `../`)
   - Specta
 
 EXTERNAL SOURCES:
-  CYFDrawerViewController:
+  RBIDrawerViewController:
     :path: ../
 
 SPEC CHECKSUMS:
-  CYFDrawerViewController: 968b6245c7d9ed7f857965041a46faf17828ae10
   Expecta: 9d1bff6c8b0eeee73a166a2ee898892478927a15
-  Specta: cf3e4188cf35375c3ee2cd03f8db8f1f4ef98234
+  RBIDrawerViewController: 48298d7be06f72ffb51347b219520349daf66699
+  Specta: 69bb134672aae190a1379ff91df07dad8dd1f869
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.38.2

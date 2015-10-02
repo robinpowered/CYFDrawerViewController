@@ -1,14 +1,14 @@
 //
-//  CYFAppDelegate.m
-//  CYFDrawerViewController
+//  RBIAppDelegate.m
+//  RBIDrawerViewController
 //
-//  Created by yifeic on 09/15/2015.
+//  Created by yifeic on 10/02/2015.
 //  Copyright (c) 2015 yifeic. All rights reserved.
 //
 
-#import "CYFAppDelegate.h"
+#import "RBIAppDelegate.h"
 
-@implementation CYFAppDelegate
+@implementation RBIAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

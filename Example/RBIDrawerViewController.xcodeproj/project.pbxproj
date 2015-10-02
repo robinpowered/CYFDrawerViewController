@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45FD74B22AC2AE1DFA0FFA56 /* Pods_CYFDrawerViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5ECF4AA3D806FC701CE69D4 /* Pods_CYFDrawerViewController_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		4FE9E6330F195245886D412F /* Pods_CYFDrawerViewController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCAD53BFD0A310BAA187973 /* Pods_CYFDrawerViewController_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		57B12EE31BA8B80A007D8469 /* CYFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B12EE21BA8B80A007D8469 /* CYFMainViewController.m */; };
-		57B12EE61BA8B814007D8469 /* CYFSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B12EE51BA8B814007D8469 /* CYFSideViewController.m */; };
+		0E213D8269265321F0560EAA /* Pods_RBIDrawerViewController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA84820DF5A9891059C917B /* Pods_RBIDrawerViewController_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		57ACDCDF1BBECB61007FAE70 /* RBIMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57ACDCDC1BBECB61007FAE70 /* RBIMainViewController.m */; settings = {ASSET_TAGS = (); }; };
+		57ACDCE01BBECB61007FAE70 /* RBISideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57ACDCDE1BBECB61007FAE70 /* RBISideViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* CYFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* CYFAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* CYFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* CYFViewController.m */; };
+		6003F59E195388D20070C39A /* RBIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* RBIAppDelegate.m */; };
+		6003F5A7195388D20070C39A /* RBIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* RBIViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -25,6 +24,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		CAB5EDEF4CE0970DDC4682CB /* Pods_RBIDrawerViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D239FE18EDA646A337AFE54A /* Pods_RBIDrawerViewController_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,44 +33,44 @@
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6003F589195388D20070C39A;
-			remoteInfo = CYFDrawerViewController;
+			remoteInfo = RBIDrawerViewController;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2F6CCE7B9F6EB67793B50212 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		486CEC5A0DD129B2AC1B1E34 /* CYFDrawerViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CYFDrawerViewController.podspec; path = ../CYFDrawerViewController.podspec; sourceTree = "<group>"; };
-		4EA5164A4E183E70844059AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		57B12EE11BA8B80A007D8469 /* CYFMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYFMainViewController.h; sourceTree = "<group>"; };
-		57B12EE21BA8B80A007D8469 /* CYFMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYFMainViewController.m; sourceTree = "<group>"; };
-		57B12EE41BA8B814007D8469 /* CYFSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYFSideViewController.h; sourceTree = "<group>"; };
-		57B12EE51BA8B814007D8469 /* CYFSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYFSideViewController.m; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* CYFDrawerViewController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYFDrawerViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		052987BA05C008BF8AC99F01 /* Pods-RBIDrawerViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBIDrawerViewController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RBIDrawerViewController_Tests/Pods-RBIDrawerViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		11A262FE0E53CC94EC2C9769 /* Pods-RBIDrawerViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBIDrawerViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RBIDrawerViewController_Example/Pods-RBIDrawerViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1BA84820DF5A9891059C917B /* Pods_RBIDrawerViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RBIDrawerViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		468E936362AE4CC55B2DE67C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		57ACDCDB1BBECB61007FAE70 /* RBIMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBIMainViewController.h; sourceTree = "<group>"; };
+		57ACDCDC1BBECB61007FAE70 /* RBIMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBIMainViewController.m; sourceTree = "<group>"; };
+		57ACDCDD1BBECB61007FAE70 /* RBISideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBISideViewController.h; sourceTree = "<group>"; };
+		57ACDCDE1BBECB61007FAE70 /* RBISideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBISideViewController.m; sourceTree = "<group>"; };
+		5F6DC88918FD80585CC3E6CD /* RBIDrawerViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RBIDrawerViewController.podspec; path = ../RBIDrawerViewController.podspec; sourceTree = "<group>"; };
+		6003F58A195388D20070C39A /* RBIDrawerViewController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RBIDrawerViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F595195388D20070C39A /* CYFDrawerViewController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CYFDrawerViewController-Info.plist"; sourceTree = "<group>"; };
+		6003F595195388D20070C39A /* RBIDrawerViewController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RBIDrawerViewController-Info.plist"; sourceTree = "<group>"; };
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6003F59B195388D20070C39A /* CYFDrawerViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CYFDrawerViewController-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* CYFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYFAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* CYFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYFAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* CYFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYFViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* CYFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYFViewController.m; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* RBIDrawerViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RBIDrawerViewController-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* RBIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBIAppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* RBIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBIAppDelegate.m; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* RBIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBIViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* RBIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBIViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* CYFDrawerViewController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYFDrawerViewController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* RBIDrawerViewController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RBIDrawerViewController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6DCAD53BFD0A310BAA187973 /* Pods_CYFDrawerViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CYFDrawerViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		78DDB904F601C9CDF394BD56 /* Pods-CYFDrawerViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYFDrawerViewController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYFDrawerViewController_Example/Pods-CYFDrawerViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8225564A29327596CD30717E /* Pods-CYFDrawerViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYFDrawerViewController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYFDrawerViewController_Tests/Pods-CYFDrawerViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		B5ECF4AA3D806FC701CE69D4 /* Pods_CYFDrawerViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CYFDrawerViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E43A13339EE175310EAB027D /* Pods-CYFDrawerViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYFDrawerViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYFDrawerViewController_Example/Pods-CYFDrawerViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E6FFD4738E2D23ADA6A5E992 /* Pods-CYFDrawerViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYFDrawerViewController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYFDrawerViewController_Tests/Pods-CYFDrawerViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A10DEF1F6FE46FDB5055EB0D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B855438AC2E2DC862396CDD7 /* Pods-RBIDrawerViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBIDrawerViewController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RBIDrawerViewController_Tests/Pods-RBIDrawerViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C8855BC5A3AF24F8C065F6C2 /* Pods-RBIDrawerViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBIDrawerViewController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RBIDrawerViewController_Example/Pods-RBIDrawerViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D239FE18EDA646A337AFE54A /* Pods_RBIDrawerViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RBIDrawerViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				4FE9E6330F195245886D412F /* Pods_CYFDrawerViewController_Example.framework in Frameworks */,
+				0E213D8269265321F0560EAA /* Pods_RBIDrawerViewController_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				45FD74B22AC2AE1DFA0FFA56 /* Pods_CYFDrawerViewController_Tests.framework in Frameworks */,
+				CAB5EDEF4CE0970DDC4682CB /* Pods_RBIDrawerViewController_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,19 +103,19 @@
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
-				6003F593195388D20070C39A /* Example for CYFDrawerViewController */,
+				6003F593195388D20070C39A /* Example for RBIDrawerViewController */,
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				6C88DC0FD51C743B31CC2601 /* Pods */,
+				966243637DA59D6CEB096EE6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* CYFDrawerViewController_Example.app */,
-				6003F5AE195388D20070C39A /* CYFDrawerViewController_Tests.xctest */,
+				6003F58A195388D20070C39A /* RBIDrawerViewController_Example.app */,
+				6003F5AE195388D20070C39A /* RBIDrawerViewController_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,38 +127,38 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				6DCAD53BFD0A310BAA187973 /* Pods_CYFDrawerViewController_Example.framework */,
-				B5ECF4AA3D806FC701CE69D4 /* Pods_CYFDrawerViewController_Tests.framework */,
+				1BA84820DF5A9891059C917B /* Pods_RBIDrawerViewController_Example.framework */,
+				D239FE18EDA646A337AFE54A /* Pods_RBIDrawerViewController_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6003F593195388D20070C39A /* Example for CYFDrawerViewController */ = {
+		6003F593195388D20070C39A /* Example for RBIDrawerViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* CYFAppDelegate.h */,
-				6003F59D195388D20070C39A /* CYFAppDelegate.m */,
+				6003F59C195388D20070C39A /* RBIAppDelegate.h */,
+				6003F59D195388D20070C39A /* RBIAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* CYFViewController.h */,
-				6003F5A6195388D20070C39A /* CYFViewController.m */,
-				57B12EE11BA8B80A007D8469 /* CYFMainViewController.h */,
-				57B12EE21BA8B80A007D8469 /* CYFMainViewController.m */,
-				57B12EE41BA8B814007D8469 /* CYFSideViewController.h */,
-				57B12EE51BA8B814007D8469 /* CYFSideViewController.m */,
+				6003F5A5195388D20070C39A /* RBIViewController.h */,
+				6003F5A6195388D20070C39A /* RBIViewController.m */,
+				57ACDCDB1BBECB61007FAE70 /* RBIMainViewController.h */,
+				57ACDCDC1BBECB61007FAE70 /* RBIMainViewController.m */,
+				57ACDCDD1BBECB61007FAE70 /* RBISideViewController.h */,
+				57ACDCDE1BBECB61007FAE70 /* RBISideViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
-			name = "Example for CYFDrawerViewController";
-			path = CYFDrawerViewController;
+			name = "Example for RBIDrawerViewController";
+			path = RBIDrawerViewController;
 			sourceTree = "<group>";
 		};
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6003F595195388D20070C39A /* CYFDrawerViewController-Info.plist */,
+				6003F595195388D20070C39A /* RBIDrawerViewController-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
-				6003F59B195388D20070C39A /* CYFDrawerViewController-Prefix.pch */,
+				6003F59B195388D20070C39A /* RBIDrawerViewController-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -185,20 +185,20 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				486CEC5A0DD129B2AC1B1E34 /* CYFDrawerViewController.podspec */,
-				2F6CCE7B9F6EB67793B50212 /* README.md */,
-				4EA5164A4E183E70844059AF /* LICENSE */,
+				5F6DC88918FD80585CC3E6CD /* RBIDrawerViewController.podspec */,
+				468E936362AE4CC55B2DE67C /* README.md */,
+				A10DEF1F6FE46FDB5055EB0D /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		6C88DC0FD51C743B31CC2601 /* Pods */ = {
+		966243637DA59D6CEB096EE6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E43A13339EE175310EAB027D /* Pods-CYFDrawerViewController_Example.debug.xcconfig */,
-				78DDB904F601C9CDF394BD56 /* Pods-CYFDrawerViewController_Example.release.xcconfig */,
-				8225564A29327596CD30717E /* Pods-CYFDrawerViewController_Tests.debug.xcconfig */,
-				E6FFD4738E2D23ADA6A5E992 /* Pods-CYFDrawerViewController_Tests.release.xcconfig */,
+				11A262FE0E53CC94EC2C9769 /* Pods-RBIDrawerViewController_Example.debug.xcconfig */,
+				C8855BC5A3AF24F8C065F6C2 /* Pods-RBIDrawerViewController_Example.release.xcconfig */,
+				B855438AC2E2DC862396CDD7 /* Pods-RBIDrawerViewController_Tests.debug.xcconfig */,
+				052987BA05C008BF8AC99F01 /* Pods-RBIDrawerViewController_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -206,45 +206,45 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6003F589195388D20070C39A /* CYFDrawerViewController_Example */ = {
+		6003F589195388D20070C39A /* RBIDrawerViewController_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "CYFDrawerViewController_Example" */;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "RBIDrawerViewController_Example" */;
 			buildPhases = (
-				31202AFF0B05BF20C9E83B9B /* Check Pods Manifest.lock */,
+				4EC39A8D79DCA0020B68EBBF /* Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				E0EAD971593BA6DD8DE5DD1B /* Embed Pods Frameworks */,
-				041787DF624BF9D957FE1D6F /* Copy Pods Resources */,
+				58F87787CE1A350C8767F2B4 /* Embed Pods Frameworks */,
+				C85956DC1827BD34E82E03FE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CYFDrawerViewController_Example;
-			productName = CYFDrawerViewController;
-			productReference = 6003F58A195388D20070C39A /* CYFDrawerViewController_Example.app */;
+			name = RBIDrawerViewController_Example;
+			productName = RBIDrawerViewController;
+			productReference = 6003F58A195388D20070C39A /* RBIDrawerViewController_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6003F5AD195388D20070C39A /* CYFDrawerViewController_Tests */ = {
+		6003F5AD195388D20070C39A /* RBIDrawerViewController_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "CYFDrawerViewController_Tests" */;
+			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "RBIDrawerViewController_Tests" */;
 			buildPhases = (
-				4B723EF8E968370EFBB3733F /* Check Pods Manifest.lock */,
+				2E69A563D2E7D261F67B4EA3 /* Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				C28F19F32C055F9E25BD034C /* Embed Pods Frameworks */,
-				7B0F0A88321F6646B94596F5 /* Copy Pods Resources */,
+				0FBDC0B5B0AA59B5F54C6AE4 /* Embed Pods Frameworks */,
+				FBB85D8ED0249578F6FD97C8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				6003F5B4195388D20070C39A /* PBXTargetDependency */,
 			);
-			name = CYFDrawerViewController_Tests;
-			productName = CYFDrawerViewControllerTests;
-			productReference = 6003F5AE195388D20070C39A /* CYFDrawerViewController_Tests.xctest */;
+			name = RBIDrawerViewController_Tests;
+			productName = RBIDrawerViewControllerTests;
+			productReference = 6003F5AE195388D20070C39A /* RBIDrawerViewController_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -253,7 +253,7 @@
 		6003F582195388D10070C39A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = CYF;
+				CLASSPREFIX = RBI;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = yifeic;
 				TargetAttributes = {
@@ -262,7 +262,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "CYFDrawerViewController" */;
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "RBIDrawerViewController" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -275,8 +275,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6003F589195388D20070C39A /* CYFDrawerViewController_Example */,
-				6003F5AD195388D20070C39A /* CYFDrawerViewController_Tests */,
+				6003F589195388D20070C39A /* RBIDrawerViewController_Example */,
+				6003F5AD195388D20070C39A /* RBIDrawerViewController_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -303,22 +303,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		041787DF624BF9D957FE1D6F /* Copy Pods Resources */ = {
+		0FBDC0B5B0AA59B5F54C6AE4 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYFDrawerViewController_Example/Pods-CYFDrawerViewController_Example-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBIDrawerViewController_Tests/Pods-RBIDrawerViewController_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		31202AFF0B05BF20C9E83B9B /* Check Pods Manifest.lock */ = {
+		2E69A563D2E7D261F67B4EA3 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -333,7 +333,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		4B723EF8E968370EFBB3733F /* Check Pods Manifest.lock */ = {
+		4EC39A8D79DCA0020B68EBBF /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -348,7 +348,22 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		7B0F0A88321F6646B94596F5 /* Copy Pods Resources */ = {
+		58F87787CE1A350C8767F2B4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBIDrawerViewController_Example/Pods-RBIDrawerViewController_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C85956DC1827BD34E82E03FE /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,37 +375,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYFDrawerViewController_Tests/Pods-CYFDrawerViewController_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBIDrawerViewController_Example/Pods-RBIDrawerViewController_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C28F19F32C055F9E25BD034C /* Embed Pods Frameworks */ = {
+		FBB85D8ED0249578F6FD97C8 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYFDrawerViewController_Tests/Pods-CYFDrawerViewController_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E0EAD971593BA6DD8DE5DD1B /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYFDrawerViewController_Example/Pods-CYFDrawerViewController_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBIDrawerViewController_Tests/Pods-RBIDrawerViewController_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -400,11 +400,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57B12EE31BA8B80A007D8469 /* CYFMainViewController.m in Sources */,
-				6003F59E195388D20070C39A /* CYFAppDelegate.m in Sources */,
-				57B12EE61BA8B814007D8469 /* CYFSideViewController.m in Sources */,
-				6003F5A7195388D20070C39A /* CYFViewController.m in Sources */,
+				57ACDCE01BBECB61007FAE70 /* RBISideViewController.m in Sources */,
+				6003F59E195388D20070C39A /* RBIAppDelegate.m in Sources */,
+				6003F5A7195388D20070C39A /* RBIViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				57ACDCDF1BBECB61007FAE70 /* RBIMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +421,7 @@
 /* Begin PBXTargetDependency section */
 		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6003F589195388D20070C39A /* CYFDrawerViewController_Example */;
+			target = 6003F589195388D20070C39A /* RBIDrawerViewController_Example */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -520,13 +520,13 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E43A13339EE175310EAB027D /* Pods-CYFDrawerViewController_Example.debug.xcconfig */;
+			baseConfigurationReference = 11A262FE0E53CC94EC2C9769 /* Pods-RBIDrawerViewController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CYFDrawerViewController/CYFDrawerViewController-Prefix.pch";
-				INFOPLIST_FILE = "CYFDrawerViewController/CYFDrawerViewController-Info.plist";
+				GCC_PREFIX_HEADER = "RBIDrawerViewController/RBIDrawerViewController-Prefix.pch";
+				INFOPLIST_FILE = "RBIDrawerViewController/RBIDrawerViewController-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -535,13 +535,13 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78DDB904F601C9CDF394BD56 /* Pods-CYFDrawerViewController_Example.release.xcconfig */;
+			baseConfigurationReference = C8855BC5A3AF24F8C065F6C2 /* Pods-RBIDrawerViewController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CYFDrawerViewController/CYFDrawerViewController-Prefix.pch";
-				INFOPLIST_FILE = "CYFDrawerViewController/CYFDrawerViewController-Info.plist";
+				GCC_PREFIX_HEADER = "RBIDrawerViewController/RBIDrawerViewController-Prefix.pch";
+				INFOPLIST_FILE = "RBIDrawerViewController/RBIDrawerViewController-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -550,7 +550,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8225564A29327596CD30717E /* Pods-CYFDrawerViewController_Tests.debug.xcconfig */;
+			baseConfigurationReference = B855438AC2E2DC862396CDD7 /* Pods-RBIDrawerViewController_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -566,14 +566,14 @@
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CYFDrawerViewController_Example.app/CYFDrawerViewController_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RBIDrawerViewController_Example.app/RBIDrawerViewController_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6FFD4738E2D23ADA6A5E992 /* Pods-CYFDrawerViewController_Tests.release.xcconfig */;
+			baseConfigurationReference = 052987BA05C008BF8AC99F01 /* Pods-RBIDrawerViewController_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -585,7 +585,7 @@
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CYFDrawerViewController_Example.app/CYFDrawerViewController_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RBIDrawerViewController_Example.app/RBIDrawerViewController_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -593,7 +593,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003F585195388D10070C39A /* Build configuration list for PBXProject "CYFDrawerViewController" */ = {
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "RBIDrawerViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5BD195388D20070C39A /* Debug */,
@@ -602,7 +602,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "CYFDrawerViewController_Example" */ = {
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "RBIDrawerViewController_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5C0195388D20070C39A /* Debug */,
@@ -611,7 +611,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "CYFDrawerViewController_Tests" */ = {
+		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "RBIDrawerViewController_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5C3195388D20070C39A /* Debug */,

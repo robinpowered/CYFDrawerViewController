@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6003F589195388D20070C39A"
-               BuildableName = "CYFDrawerViewController_Example.app"
-               BlueprintName = "CYFDrawerViewController_Example"
-               ReferencedContainer = "container:CYFDrawerViewController.xcodeproj">
+               BuildableName = "RBIDrawerViewController_Example.app"
+               BlueprintName = "RBIDrawerViewController_Example"
+               ReferencedContainer = "container:RBIDrawerViewController.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6003F5AD195388D20070C39A"
-               BuildableName = "CYFDrawerViewController_Tests.xctest"
-               BlueprintName = "CYFDrawerViewController_Tests"
-               ReferencedContainer = "container:CYFDrawerViewController.xcodeproj">
+               BuildableName = "RBIDrawerViewController_Tests.xctest"
+               BlueprintName = "RBIDrawerViewController_Tests"
+               ReferencedContainer = "container:RBIDrawerViewController.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "CYFDrawerViewController_Example.app"
-            BlueprintName = "CYFDrawerViewController_Example"
-            ReferencedContainer = "container:CYFDrawerViewController.xcodeproj">
+            BuildableName = "RBIDrawerViewController_Example.app"
+            BlueprintName = "RBIDrawerViewController_Example"
+            ReferencedContainer = "container:RBIDrawerViewController.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,9 +63,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "CYFDrawerViewController_Example.app"
-            BlueprintName = "CYFDrawerViewController_Example"
-            ReferencedContainer = "container:CYFDrawerViewController.xcodeproj">
+            BuildableName = "RBIDrawerViewController_Example.app"
+            BlueprintName = "RBIDrawerViewController_Example"
+            ReferencedContainer = "container:RBIDrawerViewController.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "CYFDrawerViewController_Example.app"
-            BlueprintName = "CYFDrawerViewController_Example"
-            ReferencedContainer = "container:CYFDrawerViewController.xcodeproj">
+            BuildableName = "RBIDrawerViewController_Example.app"
+            BlueprintName = "RBIDrawerViewController_Example"
+            ReferencedContainer = "container:RBIDrawerViewController.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

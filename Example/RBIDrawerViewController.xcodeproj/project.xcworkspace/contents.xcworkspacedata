@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CYFDrawerViewController.xcodeproj">
+      location = "self:RBIDrawerViewController.xcodeproj">
    </FileRef>
 </Workspace>

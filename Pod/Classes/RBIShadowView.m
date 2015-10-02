@@ -1,18 +1,18 @@
 //
-//  CYFShadowView.m
+//  RBIShadowView.m
 //  Pods
 //
-//  Created by Victor on 9/15/15.
+//  Created by Victor on 10/2/15.
 //
 //
 
-#import "CYFShadowView.h"
+#import "RBIShadowView.h"
 
-@interface CYFShadowLayer : CALayer
+@interface RBIShadowLayer : CALayer
 
 @end
 
-@implementation CYFShadowLayer
+@implementation RBIShadowLayer
 
 - (void)setBounds:(CGRect)bounds
 {
@@ -28,11 +28,11 @@
 
 @end
 
-@implementation CYFShadowView
+@implementation RBIShadowView
 
 + (Class)layerClass
 {
-    return [CYFShadowLayer class];
+    return [RBIShadowLayer class];
 }
 
 - (void)setShadowColor:(UIColor *)shadowColor

@@ -1,29 +1,29 @@
 //
-//  CYFDrawerViewController.m
+//  RBIDrawerViewController.m
 //  Pods
 //
-//  Created by Victor on 9/15/15.
+//  Created by Victor on 10/2/15.
 //
 //
 
-#import "CYFDrawerViewController.h"
-#import "CYFShadowView.h"
+#import "RBIDrawerViewController.h"
+#import "RBIShadowView.h"
 
-@interface CYFDrawerViewController () {
+@interface RBIDrawerViewController () {
     CGFloat _openRevealDistance;
 }
 
 @property (nonatomic, strong) NSLayoutConstraint *sideViewWidthConstraint;
 @property (nonatomic, strong) NSLayoutConstraint *mainViewLeftConstraint;
-@property (nonatomic) CYFDrawerViewStatus status;
+@property (nonatomic) RBIDrawerViewStatus status;
 
 @end
 
-@implementation CYFDrawerViewController
+@implementation RBIDrawerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     [self addChildViewController:self.mainViewController];
     [self.mainViewController didMoveToParentViewController:self];
     [self addChildViewController:self.sideViewController];
@@ -33,7 +33,7 @@
     sideView.translatesAutoresizingMaskIntoConstraints = false;
     [self.view addSubview:sideView];
     
-    CYFShadowView *shadowView = [[CYFShadowView alloc] init];
+    RBIShadowView *shadowView = [[RBIShadowView alloc] init];
     shadowView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:shadowView];
     
@@ -70,7 +70,7 @@
     self.swipeGesture.direction = UISwipeGestureRecognizerDirectionLeft;
     [self.view addGestureRecognizer:self.swipeGesture];
     self.swipeGesture.enabled = NO;
-
+    
 }
 
 - (instancetype)init
@@ -90,18 +90,18 @@
         _mainViewController = mainViewController;
         _sideViewController = sideViewController;
         _openRevealDistance = 267;
-        _status = CYFDrawerViewStatusClosed;
+        _status = RBIDrawerViewStatusClosed;
         _openDuration = 0.25;
     }
     return self;
 }
 
 - (void)openDrawer:(void (^)(void))completionBlock {
-    if (self.status != CYFDrawerViewStatusClosed) {
+    if (self.status != RBIDrawerViewStatusClosed) {
         return;
     }
     
-    self.status = CYFDrawerViewStatusOpening;
+    self.status = RBIDrawerViewStatusOpening;
     self.mainViewController.view.userInteractionEnabled = NO;
     [self setNeedsStatusBarAppearanceUpdate];
     self.screenEdgeGesture.enabled = NO;
@@ -109,7 +109,7 @@
     [UIView animateWithDuration:self.openDuration delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
-        self.status = CYFDrawerViewStatusOpen;
+        self.status = RBIDrawerViewStatusOpen;
         if (completionBlock) {
             completionBlock();
         }
@@ -118,16 +118,16 @@
 }
 
 - (void)closeDrawer:(void (^)(void))completionBlock {
-    if (self.status != CYFDrawerViewStatusOpen) {
+    if (self.status != RBIDrawerViewStatusOpen) {
         return;
     }
     self.swipeGesture.enabled = NO;
-    self.status = CYFDrawerViewStatusClosing;
+    self.status = RBIDrawerViewStatusClosing;
     self.mainViewLeftConstraint.constant = 0;
     [UIView animateWithDuration:self.openDuration delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
-        self.status = CYFDrawerViewStatusClosed;
+        self.status = RBIDrawerViewStatusClosed;
         if (completionBlock) {
             completionBlock();
         }
@@ -147,14 +147,14 @@
 }
 
 - (UIViewController *)childViewControllerForStatusBarStyle {
-    if (self.status == CYFDrawerViewStatusClosed) {
+    if (self.status == RBIDrawerViewStatusClosed) {
         return self.mainViewController;
     }
     return self.sideViewController;
 }
 
 - (UIViewController *)childViewControllerForStatusBarHidden {
-    if (self.status == CYFDrawerViewStatusClosed) {
+    if (self.status == RBIDrawerViewStatusClosed) {
         return self.mainViewController;
     }
     return self.sideViewController;
@@ -170,5 +170,27 @@
         self.sideViewWidthConstraint.constant = openRevealDistance;
     }
 }
+
+//#pragma mark - Lifecycle
+//
+//- (BOOL)shouldAutomaticallyForwardAppearanceMethods {
+//    return NO;
+//}
+//
+//- (void)viewWillAppear:(BOOL)animated {
+//    [self.mainViewController beginAppearanceTransition:YES animated:animated];
+//}
+//
+//- (void)viewDidAppear:(BOOL)animated {
+//    [self.mainViewController endAppearanceTransition];
+//}
+//
+//- (void)viewWillDisappear:(BOOL)animated {
+//    [self.mainViewController beginAppearanceTransition:NO animated:animated];
+//}
+//
+//- (void)viewDidDisappear:(BOOL)animated {
+//    [self.mainViewController endAppearanceTransition];
+//}
 
 @end

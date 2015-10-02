@@ -1,9 +1,9 @@
 # RBIDrawerViewController
 
-[![CI Status](http://img.shields.io/travis/yifeic/CYFDrawerViewController.svg?style=flat)](https://travis-ci.org/yifeic/CYFDrawerViewController)
-[![Version](https://img.shields.io/cocoapods/v/CYFDrawerViewController.svg?style=flat)](http://cocoapods.org/pods/CYFDrawerViewController)
-[![License](https://img.shields.io/cocoapods/l/CYFDrawerViewController.svg?style=flat)](http://cocoapods.org/pods/CYFDrawerViewController)
-[![Platform](https://img.shields.io/cocoapods/p/CYFDrawerViewController.svg?style=flat)](http://cocoapods.org/pods/CYFDrawerViewController)
+[![CI Status](http://img.shields.io/travis/yifeic/RBIDrawerViewController.svg?style=flat)](https://travis-ci.org/yifeic/RBIDrawerViewController)
+[![Version](https://img.shields.io/cocoapods/v/RBIDrawerViewController.svg?style=flat)](http://cocoapods.org/pods/RBIDrawerViewController)
+[![License](https://img.shields.io/cocoapods/l/RBIDrawerViewController.svg?style=flat)](http://cocoapods.org/pods/RBIDrawerViewController)
+[![Platform](https://img.shields.io/cocoapods/p/RBIDrawerViewController.svg?style=flat)](http://cocoapods.org/pods/RBIDrawerViewController)
 
 ## Usage
 
